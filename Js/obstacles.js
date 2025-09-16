@@ -9,7 +9,7 @@ class Obstacles {
     this.difHeight = [100, 200, 300, 425];
     this.ramdomIndex2 = Math.floor(Math.random() * this.difHeight.length);
     this.top = this.difHeight[this.ramdomIndex2];
-    this.width = 150;
+    this.width = 40;
     this.height = 100;
 
     this.ObsElement = document.createElement("img");
@@ -18,7 +18,7 @@ class Obstacles {
     this.ObsElement.style.width = `${this.width}px`;
     this.ObsElement.style.top = `${this.top}px`;
     this.ObsElement.style.left = `${this.left}px`;
-    this.ObsElement.src = "../Asset/image/monterflower.png";
+    this.ObsElement.src = "./Asset/image/monsterflower2.png";
 
     this.gamescreen.appendChild(this.ObsElement);
   }

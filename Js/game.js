@@ -7,14 +7,7 @@ class Game {
     this.liveElement = document.getElementById("lives");
     this.scoreElement = document.getElementById("score");
     this.hudeElement = document.getElementById("hud");
-    this.player = new Player(
-      this.gameScreenElement,
-      0,
-      370,
-      160,
-      120,
-      "Asset/image/uni_lili.png"
-    );
+    this.player = new Player(this.gameScreenElement, 0, 290, 120, 110);
     this.height = 800;
     this.width = 1000;
 

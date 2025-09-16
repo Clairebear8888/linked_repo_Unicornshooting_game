@@ -72,3 +72,17 @@ body {
 .logo-img {
   width: 350px;
 }
+
+.playerAnimation {
+  animation: run 0.5s steps(6) infinite;
+  background-image: url("../Asset/image/unicorn5.png");
+  transform: translate(0%, -0%);
+}
+@keyframes run {
+  0% {
+    background-position: 0, 0;
+  }
+  100% {
+    background-position: 800px, 0;
+  }
+}
