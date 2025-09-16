@@ -21,19 +21,22 @@
         <p>Use the up and down arrow to control the unicorn!</p>
       </div>
 
-      <div id="game-container">
-        <div>
-          <h2>Starts</h2>
-          <p>Score: <span id="score"> 0</span></p>
-          <p>Lives: <span id="lives"> 3</span></p>
-
-          <!-- set it in css -->
-          <div id="game-screen"></div>
+      <div>
+        <div id="game-container">
+          <div id="game-screen">
+            <div id="hud">
+              <h2>This is a very brave unicorn</h2>
+              <p>Score: <span id="score"> 0</span></p>
+              <p>Lives: <span id="lives"> 3</span></p>
+            </div>
+            <!-- set it in css -->
+          </div>
         </div>
 
         <!-- game end page -->
         <div id="end-game">
           <h1>Game Over</h1>
+          <p>Final Score: <span id="Final-score">0 </span></p>
           <br />
           <button id="restart-button">Restart</button>
         </div>
@@ -43,5 +46,6 @@
     <script type="text/javascript" src="./Js/game.js"></script>
     <script type="text/javascript" src="./Js/script.js"></script>
     <script type="text/javascript" src="./Js/player.js"></script>
+    <script type="text/javascript" src="./Js/obstacles.js"></script>
   </body>
 </html>

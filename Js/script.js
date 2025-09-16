@@ -10,6 +10,16 @@ window.onload = function () {
     startGame();
   });
 
+  restartButtonElement.addEventListener("click", () => {
+    console.log("click");
+    startGame();
+  });
+
+  window.addEventListener("keydown", handleKeydown);
+  window.addEventListener("keyup", handleKeyup);
+
+  //Pack funtions
+
   function handleKeydown(event) {
     const key = event.key;
     const possiblekeystrokes = [
@@ -36,9 +46,33 @@ window.onload = function () {
       }
     }
   }
-  window.addEventListener("keydown", handleKeydown);
 
-  // funtions
+  function handleKeyup(event) {
+    const keyPress = event.key;
+    const possiblekeystrokes = [
+      "ArrowLeft",
+      "ArrowUp",
+      "ArrowRight",
+      "ArrowDown",
+    ];
+
+    if (possiblekeystrokes.includes(keyPress)) {
+      event.preventDefault();
+      switch (keyPress) {
+        case "ArrowLeft":
+
+        case "ArrowRight":
+          OurNewGame.player.directionX = 0;
+          break;
+
+        case "ArrowUp":
+
+        case "ArrowDown":
+          OurNewGame.player.directionY = 0;
+          break;
+      }
+    }
+  }
 
   function startGame() {
     console.log("start game");
