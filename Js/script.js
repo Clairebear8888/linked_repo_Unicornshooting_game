@@ -12,7 +12,7 @@ window.onload = function () {
 
   restartButtonElement.addEventListener("click", () => {
     console.log("click");
-    startGame();
+    restartGame();
   });
 
   window.addEventListener("keydown", handleKeydown);
@@ -21,16 +21,17 @@ window.onload = function () {
   //Pack funtions
 
   function handleKeydown(event) {
-    const key = event.key;
+    const code = event.code;
     const possiblekeystrokes = [
       "ArrowLeft",
       "ArrowUp",
       "ArrowRight",
       "ArrowDown",
+      "Space",
     ];
-    if (possiblekeystrokes.includes(key)) {
+    if (possiblekeystrokes.includes(code)) {
       event.preventDefault();
-      switch (key) {
+      switch (code) {
         case "ArrowLeft":
           OurNewGame.player.directionX = -5;
           break;
@@ -42,6 +43,16 @@ window.onload = function () {
           break;
         case "ArrowDown":
           OurNewGame.player.directionY = 5;
+          break;
+        case "Space":
+          OurNewGame.boom.play();
+          OurNewGame.projectors.push(
+            new Projector(
+              OurNewGame.gameScreenElement,
+              OurNewGame.player.top - 18,
+              OurNewGame.player.left + 110
+            )
+          );
           break;
       }
     }
@@ -78,5 +89,9 @@ window.onload = function () {
     console.log("start game");
     OurNewGame = new Game();
     OurNewGame.start();
+  }
+
+  function restartGame() {
+    location.reload();
   }
 };

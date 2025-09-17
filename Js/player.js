@@ -25,12 +25,12 @@ class Player {
       this.left = 0;
     }
 
-    if (this.top > 370) {
-      this.top = 370;
+    if (this.top > 520) {
+      this.top = 520;
     }
 
-    if (this.left > 880) {
-      this.left = 880;
+    if (this.left > 900) {
+      this.left = 900;
     }
 
     if (this.top < 5) {

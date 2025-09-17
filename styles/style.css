@@ -5,17 +5,28 @@ body {
   background-color: #f0f8ff;
 }
 
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++this is game into page +++++++++++++++++++++++++++++++++++++++++++++++*/
 #game-intro {
   padding: 20px 0px;
 }
+#instructor {
+  font-size: 20px;
+  font-family: "VT323", monospace;
+}
+
 #game-intro img {
-  max-width: 500px;
+  max-width: 1000px;
   display: block;
   margin: 0 auto 20px;
 }
+#game-intro p {
+  font-size: 25px;
+  font-family: "VT323", monospace;
+}
 
+/* this is ####################################################game screen */
 #hud {
-  display: none; /* hidden at page load */
+  display: none;
   position: absolute;
   top: 10px;
   left: 10px;
@@ -41,7 +52,7 @@ body {
   padding: 0px 20px;
   overflow: hidden;
   position: relative;
-  background-image: url("../Asset/image/Design\ ohne\ Titel\ \(5\).png");
+  background-image: url("../Asset/image/newback2.png");
   background-size: auto;
   background-repeat: repeat-x;
   animation: slide-left 4s linear infinite;
@@ -54,7 +65,7 @@ body {
   }
 
   100% {
-    background-position: -100% 0;
+    background-position: -800px 0;
   }
 }
 
@@ -62,17 +73,31 @@ body {
   display: none;
   flex-direction: column;
   background: plum;
+  justify-content: center;
+  align-items: center;
 }
 
-.game-intro p {
-  font-size: 18px;
-  font-family: "Verdana";
+/* this is endgame  */
+#end-game p {
+  font-size: 32px;
+  font-family: "VT323", monospace;
+}
+
+#end-game h1 {
+  font-size: 32px;
+  font-family: "VT323", monospace;
 }
 
 .logo-img {
   width: 350px;
 }
+#ending-img {
+  max-width: 900px;
+  display: block;
+  margin: 0 auto 20px;
+}
 
+/* this is animation  */
 .playerAnimation {
   animation: run 0.5s steps(6) infinite;
   background-image: url("../Asset/image/unicorn5.png");
@@ -84,5 +109,42 @@ body {
   }
   100% {
     background-position: 800px, 0;
+  }
+}
+
+.gotHitAnimation {
+  animation: hit 0.5s steps(9) infinite;
+  background-image: url("../Asset/image/githit.png");
+  transform: translate(0%, -0%);
+}
+@keyframes hit {
+  0% {
+    background-position: 0, 0;
+  }
+  100% {
+    background-position: 1067px, 0;
+  }
+}
+
+.btn {
+  background: rgb(129, 31, 148);
+  border-bottom: 6px inset rgba(0, 0, 0, 0.5);
+  border-left: 6px inset rgba(0, 0, 0, 0.5);
+  border-right: 6px inset rgba(255, 255, 255, 0.5);
+  border-top: 6px inset rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 2.2rem;
+  margin: 1rem;
+  min-width: 200px;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  width: auto;
+
+  &:focus,
+  &:hover {
+    background: #bcbcbc;
   }
 }

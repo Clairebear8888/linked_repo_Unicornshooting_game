@@ -15,10 +15,10 @@
           alt=""
           class="background-img"
         />
-
-        <br />
-        <button id="start-button">Start Game</button>
-        <p>Use the up and down arrow to control the unicorn!</p>
+        <p>Arcadia is under attack!</p>
+        <p>Our little Unicorn Lili is here to help!</p>
+        <button id="start-button" class="btn">Start Game</button>
+        <p id="instructor">Use the up and down arrow to control the unicorn!</p>
       </div>
 
       <div>
@@ -35,14 +35,22 @@
 
         <!-- game end page -->
         <div id="end-game">
-          <h1>Game Over</h1>
+          <h1>
+            Game over! But You put up a good fight. Live to fight another day
+          </h1>
           <p>Final Score: <span id="Final-score">0 </span></p>
           <br />
-          <button id="restart-button">Restart</button>
+          <img
+            src="./Asset/image/night_background.png"
+            alt=""
+            id="ending-img"
+          />
+          <button id="restart-button" class="btn">Restart</button>
         </div>
       </div>
     </main>
 
+    <script type="text/javascript" src="./Js/projector.js"></script>
     <script type="text/javascript" src="./Js/game.js"></script>
     <script type="text/javascript" src="./Js/script.js"></script>
     <script type="text/javascript" src="./Js/player.js"></script>

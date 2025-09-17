@@ -2,7 +2,7 @@ class Obstacles {
   constructor(gamescreen) {
     this.gamescreen = gamescreen;
 
-    this.difPositions = [1000, 500, 300, 400];
+    this.difPositions = [1000, 500, 400, 1200];
     this.ramdomIndex = Math.floor(Math.random() * this.difPositions.length);
     this.left = this.difPositions[this.ramdomIndex];
 
@@ -24,7 +24,11 @@ class Obstacles {
   }
 
   move() {
-    this.left += -3;
+    let MovementLeftArray = [1, 2, 3, 4, 5, 6, 7];
+    let ramdomIndexLeft = Math.floor(Math.random() * MovementLeftArray.length);
+
+    this.left -= MovementLeftArray[ramdomIndexLeft];
+    // this.top -= MovementLeftArray[ramdomIndexLeft];
     this.updatePosition();
   }
   updatePosition() {
