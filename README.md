@@ -1,10 +1,10 @@
 🌈🦄 Saving Arcadia
 -------------------------------------------------------------------------------------------------------------
 A colorful arcade-style browser game I built for my 6-year-old daughter, who loves horses and unicorns. I wanted to show her that technology can be fun, creative, and magical — and that the sky is the limit when it comes to technolgy ✨
--------------------------------------------------------------------------------------------------------------
-🌌 Story
-https://github.com/[Clairebear8888]/[linked_repo_Unicornshooting_game]/[main]/opening.jpg?raw=true
 
+🌌 Story
+-------------------------------------------------------------------------------------------------------------
+https://github.com/Clairebear888/linked_repo_Unicornshooting_game/blob/master/img/opening.png
 
 
 In a galaxy far, far away, there is a unicorn planet called Arcadia 🪐.
@@ -12,8 +12,10 @@ But Arcadia is under attack by monsters!
 
 Only one brave unicorn, Lili, has the courage to protect her homeland.
 With fireballs of magic and unshakable bravery, Little Lili fights to save Arcadia from destruction.
--------------------------------------------------------------------------------------------------------------
+
+
 🎮 How to Play
+-------------------------------------------------------------------------------------------------------------
 
 🕹️ Controls
 
