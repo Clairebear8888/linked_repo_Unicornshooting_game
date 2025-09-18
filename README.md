@@ -3,6 +3,7 @@
 A colorful arcade-style browser game I built for my 6-year-old daughter, who loves horses and unicorns. I wanted to show her that technology can be fun, creative, and magical — and that the sky is the limit when it comes to technolgy ✨
 -------------------------------------------------------------------------------------------------------------
 🌌 Story
+![alt text](https://github.com/[Clairebear8888]/[linked_repo_Unicornshooting_game]/blob/[main]/opening.jpg?raw=true)
 
 In a galaxy far, far away, there is a unicorn planet called Arcadia 🪐.
 But Arcadia is under attack by monsters!
@@ -72,11 +73,6 @@ Technology isn’t just about code — it’s about creativity, colors, fun, and
 
 And what better way than a game about a unicorn saving her magical planet? 🦄🌈
 -------------------------------------------------------------------------------------------------------------
-
-📷 Screenshots
--------------------------------------------------------------------------------------------------------------
-
-//
 
 🏁 Getting Started
 -------------------------------------------------------------------------------------------------------------
