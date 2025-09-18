@@ -1,6 +1,6 @@
 🌈🦄 Saving Arcadia
 -------------------------------------------------------------------------------------------------------------
-A colorful arcade-style browser game I built for my 6-year-old daughter, who loves horses and unicorns. I wanted to show her that technology can be fun, creative, and magical — and that the sky is the limit when it comes to technolgy ✨
+A colorful arcade-style browser game I built for my 6-year-old daughter, who loves horses and unicorns. I wanted to show her that technology can be fun, creative, and magical and that the sky is the limit when it comes to technolgy ✨
 
 🌌 Story
 -------------------------------------------------------------------------------------------------------------
@@ -65,7 +65,7 @@ CSS3 (animations, backgrounds, responsive layout)
 
 Vanilla JavaScript (ES6) for all game logic
 
-Runs directly in the browser — no installs needed!
+Runs directly in the browser, no installs needed!
 
 💡 Inspiration
 -------------------------------------------------------------------------------------------------------------
@@ -73,7 +73,7 @@ Runs directly in the browser — no installs needed!
 This game is dedicated to my daughter 💖 who inspires me every day.
 I wanted to show her that:
 
-Technology isn’t just about code — it’s about creativity, colors, fun, and imagination.
+Technology isn’t just about code, it’s about creativity, colors, fun, and imagination.
 
 And what better way than a game about a unicorn saving her magical planet? 🦄🌈
 -------------------------------------------------------------------------------------------------------------
