@@ -3,7 +3,7 @@
 A colorful arcade-style browser game I built for my 6-year-old daughter, who loves horses and unicorns. I wanted to show her that technology can be fun, creative, and magical — and that the sky is the limit when it comes to technolgy ✨
 -------------------------------------------------------------------------------------------------------------
 🌌 Story
-https://github.com/[Clairebear8888]/[linked_repo_Unicornshooting_game]/blob/[main]/opening.jpg?raw=true
+https://github.com/[Clairebear8888]/[linked_repo_Unicornshooting_game]/[main]/opening.jpg?raw=true
 
 
 
