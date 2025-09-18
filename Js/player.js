@@ -38,14 +38,6 @@ class Player {
     }
   }
 
-  /**
-   * Generic collision check.
-   * Accepts:
-   *  - a DOM Element (e.g. HTMLElement)
-   *  - an object with .element, .Element, .ObsElement, .enemyElement, .fireballElement, etc.
-   *
-   * Returns true when bounding boxes overlap, false otherwise.
-   */
   didCollide(target) {
     // defensive guards
     if (!target) {
@@ -73,8 +65,6 @@ class Player {
     }
 
     if (!targetElement) {
-      // Helpful debug when migrating old property names
-      // console.warn("didCollide: target has no usable DOM element:", target);
       return false;
     }
 
@@ -90,7 +80,6 @@ class Player {
     );
   }
 
-  // Keep the old name for enemy-collision calls, but delegate to didCollide
   didCollideEne(enemy) {
     return this.didCollide(enemy);
   }

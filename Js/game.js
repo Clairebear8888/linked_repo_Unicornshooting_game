@@ -30,17 +30,17 @@ class Game {
     this.enemy = [new Enemy(this.gameScreenElement)];
 
     // sounds
-    this.boom = new Audio("../Asset/Sounds/POL-cinematic-boom-01.wav");
+    this.boom = new Audio("Asset/Sounds/POL-cinematic-boom-01.wav");
     this.boom.volume = 0.5;
-    this.gothit = new Audio("../Asset/Sounds/gothit2.wav");
+    this.gothit = new Audio("Asset/Sounds/gothit2.wav");
     this.gothit.volume = 0.3;
-    this.backgound = new Audio("../Asset/Sounds/background2.wav");
+    this.backgound = new Audio("Asset/Sounds/background2.wav");
     this.backgound.volume = 0.1;
-    this.bing = new Audio("../Asset/Sounds/bing.mp3");
+    this.bing = new Audio("Asset/Sounds/bing.mp3");
     this.bing.volume = 0.2;
-    this.fail = new Audio("./Asset/Sounds/fail.mp3");
+    this.fail = new Audio("Asset/Sounds/fail.mp3");
     this.fail.volume = 0.2;
-    this.win = new Audio("./Asset/Sounds/win.mp3");
+    this.win = new Audio("Asset/Sounds/win.mp3");
     this.win.volume = 0.2;
 
     // levels

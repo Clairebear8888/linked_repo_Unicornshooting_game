@@ -47,7 +47,7 @@ body {
   font-family: "VT323", monospace;
 }
 
-/* this is ####################################################game screen */
+/* this is game screen */
 #hud {
   display: none;
   position: absolute;
@@ -55,7 +55,8 @@ body {
   left: 10px;
   color: white;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 15px;
+  font-family: "VT323", monospace;
   text-align: left;
   background: rgba(0, 0, 0, 0.4); /* translucent background */
   padding: 10px 15px;
