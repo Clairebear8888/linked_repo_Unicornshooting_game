@@ -48,6 +48,9 @@ body {
 }
 
 /* this is game screen */
+#beach {
+  display: none;
+}
 #hud {
   display: none;
   position: absolute;

@@ -11,6 +11,7 @@ class Game {
     this.hudeElement = document.getElementById("hud");
     this.endscoreElement = document.getElementById("Final-score");
     this.currentlevelElement = document.getElementById("current-level");
+    this.beachElement = document.getElementById("beach");
 
     // Ensure Player class
     this.player = new Player(this.gameScreenElement, 0, 290, 120, 110);
@@ -277,6 +278,9 @@ class Game {
 
     if (this.score === 30) {
       this.youwin();
+    }
+    if (this.level === 3) {
+      this.beachElement.style.display = "flex";
     }
   }
 }
