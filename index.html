@@ -4,28 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="icon" type="image/x.icon" href="/Asset/image/uni_lili.png" />
     <title>Unicorn Arcade</title>
   </head>
   <body>
     <main>
       <!-- game intro page -->
       <div id="game-intro">
-        <img
-          src="./Asset/image/opening_background.png"
-          alt=""
-          class="background-img"
-        />
+        <img src="./Asset/image/opening.png" alt="" class="background-img" />
         <p>Arcadia is under attack!</p>
-        <p>Our little Unicorn Lili is here to help!</p>
+        <p>Little Unicorn Lili is trying to save her homeland!</p>
         <button id="start-button" class="btn">Start Game</button>
         <p id="instructor">Use the up and down arrow to control the unicorn!</p>
       </div>
-
+      <!-- stage1 page -->
       <div>
         <div id="game-container">
           <div id="game-screen">
             <div id="hud">
-              <h2>This is a very brave unicorn</h2>
+              <h2>Level <span id="current-level">1</span></h2>
               <p>Score: <span id="score"> 0</span></p>
               <p>Lives: <span id="lives"> 3</span></p>
             </div>
@@ -40,20 +37,26 @@
           </h1>
           <p>Final Score: <span id="Final-score">0 </span></p>
           <br />
-          <img
-            src="./Asset/image/night_background.png"
-            alt=""
-            id="ending-img"
-          />
+          <img src="./Asset/image/gameover.png" alt="" id="ending-img" />
           <button id="restart-button" class="btn">Restart</button>
         </div>
+      </div>
+      <!-- you win end page -->
+
+      <div id="you-win">
+        <h1>Aradia is saved! Nice work Lili!</h1>
+        <p>Final Score: <span id="Final-score2">0 </span></p>
+        <br />
+        <img src="./Asset/image/youwin.png" alt="" id="ending-img" />
+        <button id="restart-button2" class="btn">Restart</button>
       </div>
     </main>
 
     <script type="text/javascript" src="./Js/projector.js"></script>
+    <script type="text/javascript" src="./Js/enemy.js"></script>
+    <script type="text/javascript" src="./Js/obstacles.js"></script>
+    <script type="text/javascript" src="./Js/player.js"></script>
     <script type="text/javascript" src="./Js/game.js"></script>
     <script type="text/javascript" src="./Js/script.js"></script>
-    <script type="text/javascript" src="./Js/player.js"></script>
-    <script type="text/javascript" src="./Js/obstacles.js"></script>
   </body>
 </html>

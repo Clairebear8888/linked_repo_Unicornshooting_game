@@ -1,6 +1,7 @@
 window.onload = function () {
   const startButtonElement = document.getElementById("start-button");
   const restartButtonElement = document.getElementById("restart-button");
+  const restartButton2Element = this.document.getElementById("restart-button2");
 
   let OurNewGame;
 
@@ -12,6 +13,11 @@ window.onload = function () {
 
   restartButtonElement.addEventListener("click", () => {
     console.log("click");
+    restartGame();
+  });
+
+  restartButton2Element.addEventListener("click", () => {
+    console.log("click restart button2");
     restartGame();
   });
 
@@ -59,7 +65,7 @@ window.onload = function () {
   }
 
   function handleKeyup(event) {
-    const keyPress = event.key;
+    const keyPress = event.code;
     const possiblekeystrokes = [
       "ArrowLeft",
       "ArrowUp",

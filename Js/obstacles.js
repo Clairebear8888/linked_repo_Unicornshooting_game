@@ -1,38 +1,54 @@
 class Obstacles {
-  constructor(gamescreen) {
+  constructor(gamescreen, speed = 2) {
     this.gamescreen = gamescreen;
+    this.speed = speed;
 
-    this.difPositions = [1000, 500, 400, 1200];
-    this.ramdomIndex = Math.floor(Math.random() * this.difPositions.length);
-    this.left = this.difPositions[this.ramdomIndex];
+    this.difPositions = [1000, 500, 400];
+    this.randomIndex = Math.floor(Math.random() * this.difPositions.length);
+    this.left = this.difPositions[this.randomIndex];
 
     this.difHeight = [100, 200, 300, 425];
-    this.ramdomIndex2 = Math.floor(Math.random() * this.difHeight.length);
-    this.top = this.difHeight[this.ramdomIndex2];
+    this.randomIndex2 = Math.floor(Math.random() * this.difHeight.length);
+    this.top = this.difHeight[this.randomIndex2];
+
     this.width = 40;
     this.height = 100;
 
-    this.ObsElement = document.createElement("img");
-    this.ObsElement.style.position = "absolute";
-    this.ObsElement.style.height = `${this.height}px`;
-    this.ObsElement.style.width = `${this.width}px`;
-    this.ObsElement.style.top = `${this.top}px`;
-    this.ObsElement.style.left = `${this.left}px`;
-    this.ObsElement.src = "./Asset/image/monsterflower2.png";
+    this.directionX = Math.random() > 0.5 ? 1 : -1;
+    this.directionY = Math.random() > 0.5 ? 1 : -1;
 
-    this.gamescreen.appendChild(this.ObsElement);
+    this.element = document.createElement("img");
+    this.element.style.position = "absolute";
+    this.element.style.height = `${this.height}px`;
+    this.element.style.width = `${this.width}px`;
+    this.element.style.top = `${this.top}px`;
+    this.element.style.left = `${this.left}px`;
+    this.element.src = "./Asset/image/monsterflower2.png";
+
+    this.gamescreen.appendChild(this.element);
   }
 
-  move() {
-    let MovementLeftArray = [1, 2, 3, 4, 5, 6, 7];
-    let ramdomIndexLeft = Math.floor(Math.random() * MovementLeftArray.length);
+  move(currentLevel) {
+    if (currentLevel < 3) {
+      this.left -= this.speed;
+    } else {
+      this.left += this.speed * this.directionX;
+      this.top += this.speed * this.directionY;
 
-    this.left -= MovementLeftArray[ramdomIndexLeft];
-    // this.top -= MovementLeftArray[ramdomIndexLeft];
+      if (
+        this.top <= 0 ||
+        this.top + this.height >= this.gamescreen.offsetHeight
+      ) {
+        this.directionY *= -1;
+      }
+    }
     this.updatePosition();
   }
+
   updatePosition() {
-    this.ObsElement.style.left = `${this.left}px`;
-    this.ObsElement.style.top = `${this.top}px`;
+    if (this.element) {
+      this.element.style.left = `${this.left}px`;
+      this.element.style.top = `${this.top}px`;
+    }
   }
 }
