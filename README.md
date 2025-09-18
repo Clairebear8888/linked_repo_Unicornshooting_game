@@ -5,7 +5,7 @@ A colorful arcade-style browser game I built for my 6-year-old daughter, who lov
 🌌 Story
 -------------------------------------------------------------------------------------------------------------
 
-![Alt text of the image](https://github.com/username/repository/blob/master/img/octocat.png](https://github.com/Clairebear8888/linked_repo_Unicornshooting_game/blob/main/Asset/image/opening.png)
+![Alt text of the image](https://github.com/Clairebear8888/linked_repo_Unicornshooting_game/blob/main/Asset/image/opening.png)
 
 In a galaxy far, far away, there is a unicorn planet called Arcadia 🪐.
 But Arcadia is under attack by monsters!
