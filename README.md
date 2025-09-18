@@ -4,7 +4,7 @@ A colorful arcade-style browser game I built for my 6-year-old daughter, who lov
 
 🌌 Story
 -------------------------------------------------------------------------------------------------------------
-https://github.com/Clairebear888/linked_repo_Unicornshooting_game/blob/master/img/opening.png
+Asset/image/opening.png
 
 
 In a galaxy far, far away, there is a unicorn planet called Arcadia 🪐.
