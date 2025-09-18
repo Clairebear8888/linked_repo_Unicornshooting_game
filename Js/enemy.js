@@ -12,8 +12,8 @@ class Enemy {
     this.randomIndex2 = Math.floor(Math.random() * this.difHeight.length);
     this.top = this.difHeight[this.randomIndex2];
 
-    this.width = 160;
-    this.height = 100;
+    this.width = 90;
+    this.height = 90;
 
     //ternary operator:If the condition is true, it assigns 1.If false, it assigns -1.
     this.directionX = Math.random() > 0.5 ? 1 : -1;

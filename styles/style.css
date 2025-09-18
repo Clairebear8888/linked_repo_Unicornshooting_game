@@ -171,15 +171,29 @@ body {
 }
 
 .obstaAnimation {
-  animation: jump 1s steps(7) infinite;
-  background-image: url("../Asset/image/goast.png");
-  transform: translate(10%, -0%);
+  animation: jump 1s steps(9) infinite;
+  background-image: url("../Asset/image/pinkmon2.png");
+  transform: translate(0%, -0%);
 }
 @keyframes jump {
   0% {
     background-position: 0, 0;
   }
   100% {
-    background-position: 1067px, 0;
+    background-position: 800px, 0;
+  }
+}
+
+.monFlowerAnimation {
+  animation: crawl 0.5s steps(6) infinite;
+  background-image: url("../Asset/image/monflower.png");
+  transform: translate(0%, -0%);
+}
+@keyframes crawl {
+  0% {
+    background-position: 0, 0;
+  }
+  100% {
+    background-position: 800px, 0;
   }
 }

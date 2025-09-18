@@ -11,19 +11,19 @@ class Obstacles {
     this.randomIndex2 = Math.floor(Math.random() * this.difHeight.length);
     this.top = this.difHeight[this.randomIndex2];
 
-    this.width = 40;
-    this.height = 100;
+    this.width = 140;
+    this.height = 150;
 
     this.directionX = Math.random() > 0.5 ? 1 : -1;
     this.directionY = Math.random() > 0.5 ? 1 : -1;
 
-    this.element = document.createElement("img");
+    this.element = document.createElement("div");
     this.element.style.position = "absolute";
     this.element.style.height = `${this.height}px`;
     this.element.style.width = `${this.width}px`;
     this.element.style.top = `${this.top}px`;
     this.element.style.left = `${this.left}px`;
-    this.element.src = "./Asset/image/monsterflower2.png";
+    this.element.classList.add("monFlowerAnimation");
 
     this.gamescreen.appendChild(this.element);
   }
