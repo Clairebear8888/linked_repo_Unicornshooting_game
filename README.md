@@ -81,13 +81,7 @@ And what better way than a game about a unicorn saving her magical planet? 🦄�
 🏁 Getting Started
 -------------------------------------------------------------------------------------------------------------
 
-Clone this repo
-
-git clone https://github.com/yourusername/saving-arcadia.git
-cd saving-arcadia
-
-
-Open index.html in your browser
+Open https://clairebear8888.github.io/linked_repo_Unicornshooting_game/ in your browser
 
 Play and enjoy 🎉
 
